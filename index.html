@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Sukhdeep Singh" />
+        <title>Look & Cook</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Look & Cook</h1>
+            <form id="form">
+                <input
+                    type="search"
+                    id="search-term"
+                    placeholder="Search for meals..."
+                    autofocus
+                />
+                <button type="submit" id="search-btn">Search</button>
+            </form>
+            <button type="button" id="random-btn">Confused?</button>
+        </header>
+
+        <main>
+            <section class="meals" id="meals"></section>
+
+            <section class="meal-detail" id="meal-detail"></section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>

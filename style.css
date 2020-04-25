@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    position: fixed;
+    top: 50%;
+    left: -90px;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+header form {
+    display: flex;
+}
+
+header form input[type='search'],
+header button {
+    padding: 10px;
+
+    font-size: 16px;
+    font-family: inherit;
+
+    border: 0;
+
+    outline: none;
+
+    background-color: #444;
+    color: #fff;
+}
+
+header form input[type='search'] {
+    background: rgba(255, 255, 255, 0.3);
+    width: 700px;
+}
+
+header form input[type='search']::placeholder {
+    color: #fff;
+}
+
+header form button {
+    margin-right: 10px;
+}
+
+header button:hover {
+    background-color: pink;
+    color: #222;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+main .meals {
+    border-right: solid 1px #fff;
+    padding: 0 20px;
+}
+
+main .meal {
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    border-radius: 150px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: solid 2px #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+main .meal img {
+    display: block;
+    width: 100%;
+}
+
+main .meal p {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+main .meal:hover p {
+    opacity: 1;
+}
