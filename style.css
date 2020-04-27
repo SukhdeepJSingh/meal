@@ -228,6 +228,14 @@ main .meal:hover p {
         margin: 0 5px 5px 0;
     }
 
+    main .meal p {
+        font-size: 14px;
+    }
+
+    .cuisine h2 {
+        padding: 0;
+    }
+
     .u-meals {
         font-size: 20px;
     }
