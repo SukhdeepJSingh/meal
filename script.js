@@ -82,7 +82,7 @@ function cookingInstructions(meal) {
     return meal.strInstructions
         .split('.')
         .map((step) => `<p>${step}</p>`)
-        .join('<br>');
+        .join('.<br>');
 }
 
 // Event listeners
