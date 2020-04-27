@@ -216,10 +216,20 @@ main .meal:hover p {
         width: 100%;
     }
 
+    header form input[type='search'],
+    header button {
+        font-size: 12px;
+        padding: 7px;
+    }
+
     main .meal {
         width: 100px;
         height: 100px;
         margin: 0 5px 5px 0;
+    }
+
+    .u-meals {
+        font-size: 20px;
     }
 
     .meal-thumb {
@@ -234,5 +244,15 @@ main .meal:hover p {
         margin: 5px 5px 0 0;
         padding: 2.5px 7.5px;
         font-size: 15px;
+    }
+
+    .git {
+        top: 55px;
+        right: -40px;
+        transform: rotate(90deg);
+    }
+
+    .git a {
+        font-size: 10px;
     }
 }
