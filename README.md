@@ -2,6 +2,8 @@
 
 An app made with Vanilla JavaScript.
 
+Live - https://sukhdeep-j-singh.github.io/meal/
+
 How to:
 Enter name of any meal, chicken, for instance, and hit enter.
 Hit confused button to get a random meal.
