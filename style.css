@@ -30,7 +30,6 @@ h1 {
 }
 
 header {
-    width: 100%;
     display: flex;
     justify-content: center;
     margin: 20px 0 0px 0;
@@ -58,7 +57,7 @@ header button {
 header form input[type='search'] {
     background: rgba(0, 0, 0, 0.2);
     color: #222;
-    width: 700px;
+    width: 600px;
 }
 
 header form input[type='search']::placeholder {
@@ -75,12 +74,10 @@ header button:hover {
 }
 
 main {
-    /* display: flex; */
     width: 100%;
 }
 
 main .meals {
-    /* width: 900px; */
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -182,4 +179,60 @@ main .meal:hover p {
     margin-top: 10px;
     border-top: solid 2px #000;
     padding: 30px;
+}
+
+.git {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: 700;
+    z-index: -1;
+}
+
+.git a {
+    color: inherit;
+}
+
+.git a:visited {
+    color: #000;
+}
+
+@media (max-width: 900px) {
+    header form input[type='search'] {
+        background: rgba(0, 0, 0, 0.2);
+        color: #222;
+        width: 400px;
+    }
+}
+
+@media (max-width: 650px) {
+    h1 {
+        display: none;
+    }
+
+    header form input[type='search'] {
+        background: rgba(0, 0, 0, 0.2);
+        color: #222;
+        width: 100%;
+    }
+
+    main .meal {
+        width: 100px;
+        height: 100px;
+        margin: 0 5px 5px 0;
+    }
+
+    .meal-thumb {
+        padding: 50px 0;
+    }
+
+    .meal-thumb h2 {
+        font-size: 20px;
+    }
+
+    .ingredients li {
+        margin: 5px 5px 0 0;
+        padding: 2.5px 7.5px;
+        font-size: 15px;
+    }
 }
