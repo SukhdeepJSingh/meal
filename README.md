@@ -2,7 +2,7 @@
 
 An app made with Vanilla JavaScript.
 
-Live - https://sukhdeep-j-singh.github.io/meal/
+Live - https://SukhdeepJSingh.github.io/meal/
 
 How to:
 Enter name of any meal, chicken, for instance, and hit enter.
